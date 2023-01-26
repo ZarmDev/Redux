@@ -1,78 +1,74 @@
-# GitHub Codespaces ♥️ React
+# Redux Starter (github codespaces)
 
-Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
+# THIS PROJECT IS FOR COMPLETE BEGINNERS :)
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+1. Make sure you have npm installed
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+2. Run these commands (to install the dependencies)
 
-This project was bootstrapped for you with [Create React App](https://github.com/facebook/create-react-app).
+```npm install redux```
 
-## Available Scripts
+```npm install react-redux```
 
-In the project directory, you can run:
+```npm install @reduxjs/toolkit```
 
-### `npm start`
+3. Run npm run start
 
-We've already run this for you in the `Codespaces: server` terminal window below. If you need to stop the server for any reason you can just run `npm start` again to bring it back online.
+```npm run start```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) in the built-in Simple Browser (`Cmd/Ctrl + Shift + P > Simple Browser: Show`) to view your running application.
+If you've never used this before, here's a rundown:
 
-The page will reload automatically when you make changes.\
-You may also see any lint errors in the console.
+* npm run is just a command
+* You can make your own commands, for example, npm run meow (yes I added meow)
 
-### `npm test`
+4. Check it out
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Optional: How to publish it
 
-### `npm run build`
+**FIRST** 
+* Go to settings on the github page (the home one)
+(if you can't find it, it's https://github.com/replacewithyourusername/replacewithyourgithubprojectname/settings)
+* Go to pages
+* 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you need to put your site on github pages, you should use gh-pages, you can find it here: [gh-pages](https://github.com/gitname/react-gh-pages)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Basically, do these steps (taken from react-gh-pages)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Follow In Order**
 
-### `npm run eject`
+1. Add homepage to package.json, for example, I would put https://zarmdev.github.io/redux
+{
+  "name": "my-app",
+  "version": "0.1.0",
++ "homepage": "https://gitname.github.io/react-gh-pages",
+  "private": true,
+2. Add predeploy to package.json, literally just copy and paste the lines with a + into your scripts in package.json
+"scripts": {
++   "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+3. Commit changes
+Open the terminal and enter:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```git add -A```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```git commit -m "message"```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```git push```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```npm run deploy```
 
-## Learn More
+If you don't know what deploy is, it's a made up command (the deploy part.)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Remember:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* npm run is just a command
+* You can make your own commands, for example, npm run meow (yes I added meow)
 
-### Code Splitting
+If you want to know what it does under the hood, it runs npm run build which just makes the app ready to be run on a localhost/website
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```npm run deploy``` **IS VERY IMPORTANT**
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Now, 
