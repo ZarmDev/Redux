@@ -25,12 +25,6 @@ If you've never used this before, here's a rundown:
 
 5. Optional: How to publish it
 
-**FIRST** 
-* Go to settings on the github page (the home one)
-(if you can't find it, it's https://github.com/replacewithyourusername/replacewithyourgithubprojectname/settings)
-* Go to pages
-* 
-
 If you need to put your site on github pages, you should use gh-pages, you can find it here: [gh-pages](https://github.com/gitname/react-gh-pages)
 
 Basically, do these steps (taken from react-gh-pages)
@@ -61,15 +55,11 @@ Open the terminal and enter:
 
 ```npm run deploy```
 
-If you don't know what deploy is, it's a made up command (the deploy part.)
+If you want to know what it does under the hood, it runs npm run build which just makes the app ready to be run on a localhost/website
 
 Remember:
 
 * npm run is just a command
 * You can make your own commands, for example, npm run meow (yes I added meow)
 
-If you want to know what it does under the hood, it runs npm run build which just makes the app ready to be run on a localhost/website
-
-```npm run deploy``` **IS VERY IMPORTANT**
-
-Now, 
+Now, wait for a few minutes and check the link you put in package.json, for example, mine is https://zarmdev.github.io/Redux/
