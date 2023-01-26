@@ -1,6 +1,6 @@
 # Redux Starter (github codespaces)
 
-# THIS PROJECT IS FOR COMPLETE BEGINNERS :)
+### THIS PROJECT IS FOR COMPLETE BEGINNERS :)
 
 ## 1. Press the green code button and make a new codespace
 
@@ -65,3 +65,11 @@ Remember:
 Now, wait for a few minutes and check the link you put in package.json, for example, mine is https://zarmdev.github.io/Redux/
 
 If you want to see how long it will take, go to actions on the github page.
+
+# Credits
+
+The code is originally from freecodecamp.
+
+I just put in some of redux toolkit in it (so it doesn't use the deprecated createStore.)
+
+Also, I added in some changes to the AppWrapper to make it export from app.js.
