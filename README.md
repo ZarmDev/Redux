@@ -30,21 +30,26 @@ If you need to put your site on github pages, you should use gh-pages, you can f
 Basically, do these steps (taken from react-gh-pages)
 
 ## **Follow In Order**
-## 1. Install gh-pages
+## Install gh-pages
 ```npm install gh-pages --save-dev```
-## 2. Add homepage to package.json, for example, I would put https://zarmdev.github.io/Redux (IMPORTANT: MAKE SURE YOU SPELLED IT EXACTLY RIGHT WITH CAPITALIZATION)
+## Add homepage to package.json, for example, I would put https://zarmdev.github.io/Redux
+```
+IMPORTANT: MAKE SURE YOU SPELLED IT EXACTLY RIGHT WITH CAPITALIZATION
 {
   "name": "my-app",
   "version": "0.1.0",
 + "homepage": "https://gitname.github.io/react-gh-pages",
   "private": true,
-## 3. Add predeploy to package.json, literally just copy and paste the lines with a + into your scripts in package.json
+```
+## Add predeploy to package.json, literally just copy and paste the lines with a "+" into your scripts in package.json
+```
 "scripts": {
 +   "predeploy": "npm run build",
 +   "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-## 4. Commit changes
+```
+## Commit changes
 Open the terminal and enter:
 
 ```git add -A```
