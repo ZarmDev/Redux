@@ -34,7 +34,7 @@ Basically, do these steps (taken from react-gh-pages)
 ```npm install gh-pages --save-dev```
 ## Add homepage to package.json, for example, I would put https://zarmdev.github.io/Redux
 ```
-IMPORTANT: MAKE SURE YOU SPELLED IT EXACTLY RIGHT WITH CAPITALIZATION
+// IMPORTANT: MAKE SURE YOU SPELLED IT EXACTLY RIGHT WITH CAPITALIZATION
 {
   "name": "my-app",
   "version": "0.1.0",
